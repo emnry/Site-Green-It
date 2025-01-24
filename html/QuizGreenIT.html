@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset='utf-8'>
+    <title>«Green IT – Quiz</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="../js/script.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a href="./Accueil.html">Accueil</a>
+            <a href="./GreenITSiteWeb.html">Green IT &amp; sites Web</a>
+            <a href="./QuizGreenIT.html">Quiz Green IT</a>
+            <a href="./Apropos.html">A propos de nous</a>
+
+
+        </nav>
+    </header>
+    <form method="post" name="Quiz" action="#" class="box" id="QuizId1" onsubmit="return false">
+
+        <fieldset id="informations">
+            <legend>Vos informations</legend>
+
+            <ul class="formulaire">
+
+                <li>Nom :
+                    <input type="text" id="Nom" name="nom" placeholder="Votre nom">
+                </li>
+
+                <li>Prénom :
+                    <input type="text" id="Prenom" name="prenom" placeholder="Votre prénom">
+                </li>
+
+                <li>Date de naissance :
+                    <input type="date" id="naissance" name="naissance">
+                </li>
+
+                <li>Adresse mail :
+                    <input type="email" id="mail" name="mail" placeholder="exemple@email.com">
+                </li>
+
+                <li>Statut :
+                    <select name="choix" id="Statut">
+                        <option value="">Choisissez un statut</option>
+                        <option value="Celibataire">Celibataire</option>
+                        <option value="Paxe">Paxé</option>
+                        <option value="marrie">Marié</option>
+
+                    </select>
+                </li>
+            </ul>
+
+            <input class="button" id="commencer" type="button" value=" Commencer le quiz " onclick="quizAlert()">
+
+        </fieldset>
+
+    </form>
+    <form method="post" name="Quiz" action="#" class="box" id="QuizId2" onsubmit="return false">
+        <br>
+        <fieldset class="quiz">
+            <legend>Quiz sur la Green IT</legend>
+
+            <ol>
+                <li>
+                    <p>Qu'est-ce que la Green IT ?</p>
+                    <br>
+
+
+                    <input type="radio" id="question1_a" name="question1_1" value="question1_a">
+                    <label for="question1_a">a) Une pratique visant à réduire l'impact environnemental des technologies
+                        de
+                        l'information.</label>
+                    <br>
+
+                    <input type="radio" id="question1_b" name="question1_1" value="question1_b">
+                    <label for="question1_b">b) Un système de recyclage des anciens ordinateurs.</label>
+                    <br>
+
+
+                    <input type="radio" id="question1_c" name="question1_1" value="question1_c">
+                    <label for="question1_c">c) Une méthode pour augmenter la consommation énergétique des
+                        serveurs.</label>
+                    <br>
+                </li>
+
+
+
+
+
+                <li>
+                    <p>Quel est l'objectif principal de la Green IT?</p>
+
+                    <br>
+
+
+                    <input type="checkbox" id="question2_1" name="question2_1" value="question2_1">
+                    <label for="question2_1">a) Réduire la consommation d'énergie.</label>
+                    <br>
+
+                    <input type="checkbox" id="question2_2" name="question2_2" value="question2_2">
+                    <label for="question2_2">b) Minimiser les déchets électroniques.</label>
+                    <br>
+
+
+                    <input type="checkbox" id="question2_3" name="question2_3" value="question2_3">
+                    <label for="question2_3">c) Optimiser les performances des appareils électroniques.</label>
+                    <br>
+
+                </li>
+                <li>
+                    <p>Qu'est-ce que la Green IT ?</p>
+                    <input type="text" id="question3" name="question3">
+
+
+                </li>
+
+
+            </ol>
+
+        </fieldset>
+
+        <input class="quiz" id="envoyer" type="button" value=" Envoyer " onclick="submitQuiz()">
+
+    </form>
+
+    <div class="text">
+        <main class="box">
+            <table id="result">
+                <caption>Résultats</caption>
+
+                <thead>
+                    <tr>
+                        <th>Essai</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+
+
+                <tbody id="tableaubody">
+                </tbody>
+            </table>
+
+
+        </main>
+
+    </div>
+
+
+
+
+
+    <footer> <br>
+        ©️2024 Ethan MENOURY.
+        Tous droits réservés.
+        <a href="https://www.greenit.fr/">En savoir plus ?</a>
+    </footer>
+
+
+</body>
+
+</html>

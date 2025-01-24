@@ -1,0 +1,330 @@
+
+body{
+
+    background-color: #212121; 
+    font-family:Arial, Helvetica, sans-serif;
+
+    
+    text-align: justify;
+    padding: 2%;
+
+
+    color : #868686;
+
+
+}
+
+header{
+    
+    display:flex ;
+    justify-content:center;
+    align-items:center;
+
+    padding :5vl;
+    margin: 5vl;
+    border-radius: 20px;
+
+    height: 35vh;
+    background-image:url(https://www.esi-business-school.com/wp-content/uploads/2023/10/Banniere-articles-29.jpg );
+
+    background-size:cover;
+    
+    
+}
+
+
+footer{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+    padding :5vl;
+    margin: 5vl;
+    border-radius: 20px;
+
+    background-image: url(https://www.nicomak.eu/wp-content/uploads/2020/05/leaf-1498985_1280-1-e1591179616416.jpg);
+    height: 30vh;
+
+    color:white;
+
+    font-style: italic;
+
+}
+
+/* Liens */
+
+a{
+    text-decoration-line: none;
+    color:white;
+}
+
+
+a:hover {
+    color: lightsalmon;
+    font-style:italic;
+    /* background-color: white; --> Je ne le met pas car pas beau */
+    /* border-radius: 10px; --> ainsi inutile */
+    
+}
+
+
+.text{ /* Classe crée pour remplacer les sections et se différencier de certaines div */
+
+    margin-top : 5vh;
+    margin-bottom: 5vh;
+
+    background-color: #2F2F2F;
+    padding: 2%;
+    border-radius: 20px;
+
+}
+
+/* Titres */
+
+h1{
+    font-size: 200%;
+    color: #F9F9F9;
+}
+
+h2{
+    font-size: 150%;
+    color:lightblue;
+}
+
+h1 ~ h2{
+    color: lightgreen;
+}
+
+h2 ~ h3{
+    color: lightpink;
+
+}
+
+nav{
+    width:90%;
+    text-align: center;
+    
+}
+
+nav a {
+    
+    display:inline-block;
+    background-color: #212121;
+    border-radius: 20px;
+    color: white;
+    
+    
+    padding: 2%;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:2%;
+    margin-right:2%;
+
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 0, 0);
+    
+}
+
+nav a:hover{
+
+    background-color: #2F2F2F;
+    border-color:#F9F9F9;
+    font-size: 21px;
+    font-style: inherit; /* Pour ne pas prendre l'italique des a:hover */
+}
+
+nav a:hover:first-child {
+
+    color: lightblue;
+}
+
+nav a:hover:nth-child(2) {
+
+    color: lightcoral;
+}
+
+nav a:hover:nth-child(3) {
+
+    color: lightcyan;
+}
+
+nav a:hover:nth-child(4) {
+    
+    color: lightgoldenrodyellow;
+}
+
+
+#definition,#citation{
+    font-weight: bold;
+}
+
+#postit {
+
+    display:inline-flex ; /*J'ai supprimé flex-wrap = "wrap" pour avoir tout sur une seule ligne */
+    padding: inherit;
+    margin-left: -20px;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between;
+
+    color: #212121;
+    text-align: center;
+    
+}
+
+.postit-item{
+    
+    background-color: black;
+    position: relative;
+
+    padding: 10px;
+    margin:10px;
+
+
+    
+
+}
+
+.postit-item ul{
+    
+    display: none;
+    position:absolute;
+    
+    list-style-type: none;
+    
+    width: 100%;
+
+    margin-left: -10px;
+    margin-top: 10px;
+
+    z-index: 1;
+    background-color: #F9F9F9;
+    color:black;
+
+    padding: 0;
+    padding-bottom: 20px;
+
+}
+
+.postit-item:hover ul{
+    display: block;
+    
+    }
+
+#postit .postit-item:first-child, #postit .postit-item:nth-child(5), #postit .postit-item:first-child ul, #postit .postit-item:nth-child(5) ul{
+    background-color: lightskyblue;
+}
+
+#postit .postit-item:nth-child(2), #postit .postit-item:nth-child(4), #postit .postit-item:nth-child(2) ul, #postit .postit-item:nth-child(4) ul{
+    background-color: lightblue;
+}
+
+#postit .postit-item:nth-child(3), #postit .postit-item:nth-child(3) ul{
+    background-color: lightsteelblue;
+}
+
+/* Tableau */
+
+
+table, td, caption, thead, tr, th {
+    padding: 2%;
+
+}
+
+#result{
+    width: 100%;
+}
+caption {
+    color : white;
+    font-size: 200%;
+    font-weight: bold;
+
+}
+thead, tfoot , tr{
+    background-color: #202124;
+    text-align: center;
+}
+
+tr:hover td:hover, th:hover {
+    color:white;
+}
+
+ul{
+    padding: 0;
+}
+
+
+
+fieldset{
+    border: 5px solid #2F2F2F;
+    margin-top: 20px ;
+}
+
+fieldset legend{
+    color: white ;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.formulaire li {
+    margin-left: 20px;
+}
+.formulaire > li > input, .formulaire > li > select{
+
+    border: 0px solid ;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+    color: #868686;
+    padding: 2px;
+    
+}     
+
+.button , #envoyer{
+
+    margin: 20px;
+    border-radius: 5px;
+    border :0px;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #202124;
+
+}
+
+.button:hover , #envoyer:hover {
+    background-color:  lightblue;
+    color: #212121;
+}
+
+
+.button:active, #envoyer:active{
+    background-color:  #2F2F2F;
+    color: #212121;
+}
+
+fieldset p  {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+.quiz{
+    display: none;
+}
+
+
+#commencer{
+    display: inline;
+}
+
+#reset{
+    display: inline;
+    flex-wrap: nowrap;
+    margin-left: 5rem;
+}
